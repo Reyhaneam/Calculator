@@ -1,1 +1,188 @@
+* {
+    padding: 0;
+	box-sizing: border-box;
+    margin: 0;
+border: 0;
+}
+html{
+height: 100%;
+}
+body{
+background-color: #efefef;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+height: 100%;
+}
+.main{
+background-color: #c0c0c026;
+height: 100%;
+display: grid;
+grid-template-columns: 1fr 320px;
+grid-template-rows: 30px 50px 1fr 0.3fr 3fr;
+grid-template-areas: 
+"header header"
+"navigation history"
+"result history"
+"option history"
+"keyboard history";
+}
+/*-------------grid-------------*/
+.header {
+    grid-area: header;
+}
 
+.navigation {
+    grid-area: navigation;
+}
+
+.history {
+    height: 150px;
+    grid-area: history;
+}
+
+.result {
+    grid-area: result ;
+}
+
+.option {
+    grid-area: option;
+}
+
+.keyboard {
+    grid-area: keyboard;
+}
+
+/*-------------header-------------*/
+.program_name {
+    margin: 5px 5px;
+    
+}
+.top_of_window {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    margin-top: 10px;
+    margin-left: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.top_right_of_site div{
+    height: 20px;
+    width: 30px;
+    display:inline-block;
+flex-wrap: wrap;
+}
+.close:hover {
+    color: white;
+    background-color: red;
+    font-size: 3px 3px;
+  }
+
+  .max:hover {
+    background: silver;
+  }
+  
+  .min:hover {
+    background: silver;
+  }
+
+/*-------------navigation-------------*/
+.navigation {
+    display: flex;
+}
+.navigation img {
+    margin-left: 10px;
+}
+
+.navigation_pic {
+    width: 35px;
+    height: 25px;
+}
+.navigation h3 {
+    font-size: 25px;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+.save_pic {
+    width: 20px;
+    height: 25px;
+    margin-top: 10px;
+}
+/*-------------result-------------*/
+.result_text{
+    font-size: 50px;
+    right: 14px;
+    top: 20px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+ /*-------------option-------------*/
+ .cal_option {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.cal_option button {
+    width: 7.5%;
+    height: 32px;
+    background-color: #c0c0c000;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cal_option button:hover {
+    background-color: silver;
+}
+/*-------------keyboard-------------*/
+.keyboard {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.25%;
+  }
+  .keyboard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .keyboard div:hover {
+    background: silver;
+  }
+  .calNumber {
+    background: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .calOperator {
+    background: #f0f0f0;
+  }
+  #backspace {
+    font-size: large;
+  }
+  #divide,
+  #point {
+    font-size: xx-large;
+  }
+  #mines {
+    font-size: x-large;
+  }
+/*-------------history-------------*/
+.history {
+    height: 160px;
+}
+
+.history span {
+    font-size: 20px;
+    margin-right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.history_text {
+    border-bottom: 4px inset rgb(228, 137, 0);
+    padding-bottom: 2.7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text_of_beneath_history {
+    font-size: 17px;
+    margin-top:35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
